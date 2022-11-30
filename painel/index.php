@@ -14,10 +14,11 @@ $error_message = $_GET['error'] ?? null;
     <link rel="stylesheet" href="assets/normalize.css">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="shortcut icon" href="public/icons/favicon.ico" type="image/x-icon">
+    <script src="assets/scripts.js"></script>
     <title>Vapor - Admnistrador - Login</title>
 </head>
 
-<body>
+<body onclick="removeErrorMessage()">
     <div class="container">
         <div id="form-login">
             <form action="./login.php" method="POST">
@@ -35,7 +36,7 @@ $error_message = $_GET['error'] ?? null;
                 <button class="button-default" type="submit">Entrar</button>
 
                 <?php if($error_message != null) { ?>
-                    <div class="error-message"><?=$error_message?></div>
+                    <div id="error" class="error-message"><?=$error_message?></div>
                 <?php } ?>
             </form>
         </div>

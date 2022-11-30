@@ -13,3 +13,15 @@ function excluirJogo(idJogo) {
 
 }
 
+function removeErrorMessage() {
+    let errorMessage  = document.getElementById('error')
+
+    if (errorMessage != null){
+        errorMessage.remove()
+
+        
+    }
+
+}
+
+
