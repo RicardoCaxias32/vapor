@@ -3,7 +3,7 @@
     $error = $_GET['error'] ?? null;
 ?>
 
-<div onclick="removeIdioma()" id="content-container">
+<div onclick="removeElementoporId('error-idioma')" id="content-container">
     <form action="cadastrar-idioma.php" method="post">
         <div class="row">
             <div class="input-container quarter">
