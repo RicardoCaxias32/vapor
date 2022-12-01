@@ -1,18 +1,29 @@
-//function excluirJogo(idJogo) {
-   // alert(idJogo)
-//}
+// FUNÇÃO PARA EXCLUIR JOGOS, IDIOMAS, PLATAFORMAS E CATEGORIAS
 
 function excluirJogo(idJogo) {
-    let excluirJogo = confirm("Realmente deseja ecluir esse jogo?")
+    let excluirJogo = confirm("Realmente deseja excluir esse jogo?")
 
     if (excluirJogo == true){
 
-        alert("Excluindo jogo...")
+        
         window.open("excluir-jogo.php?id=" + idJogo, "_SELF")
     }
 
 }
 
+function excluirPlataforma(idPlataforma) {
+    let excluirPlataforma = confirm("Realmente deseja excluir essa plataforma?")
+
+    if (excluirPlataforma == true){
+
+        
+        window.open("excluir-plataforma.php?id=" + idPlataforma, "_SELF")
+    }
+
+}
+
+
+// FUNÇÃO DE EXCLUIR MENSAGENS //
 function removeErrorMessage() {
     let errorMessage  = document.getElementById('error')
 
@@ -25,10 +36,10 @@ function removeErrorMessage() {
 }
 
 function removeIdioma() {
-    let excluirIdioma  = document.getElementById('error-idioma')
+    let excluirErrorIdioma  = document.getElementById('error-idioma')
 
-    if (excluirIdioma != null){
-        excluirIdioma.remove()
+    if (excluirErrorIdioma != null){
+        excluirErrorIdioma.remove()
 
         
     }
@@ -36,10 +47,10 @@ function removeIdioma() {
 }
 
 function removePlataforma() {
-    let excluirPlataforma  = document.getElementById('error-plataforma')
+    let excluirErrorPlataforma  = document.getElementById('error-plataforma')
 
-    if (excluirPlataforma != null){
-        excluirPlataforma.remove()
+    if (excluirErrorPlataforma != null){
+        excluirErrorPlataforma.remove()
 
         
     }
@@ -49,8 +60,8 @@ function removePlataforma() {
 function removeCategoria() {
     let excluirCategoria  = document.getElementById('error-categoria')
 
-    if (excluirCategoria != null){
-        excluirCategoria.remove()
+    if (excluirErrorCategoria != null){
+        excluirErrorCategoria.remove()
 
         
     }
