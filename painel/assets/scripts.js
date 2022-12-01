@@ -22,6 +22,17 @@ function excluirPlataforma(idPlataforma) {
 
 }
 
+function excluirIdioma(idIdioma) {
+    let excluirIdioma = confirm("Realmente deseja excluir esse idioma?")
+
+    if (excluirIdioma == true){
+
+        
+        window.open("excluir-idioma.php?id=" + idIdioma, "_SELF")
+    }
+
+}
+
 
 // FUNÇÃO DE EXCLUIR MENSAGENS //
 function removeErrorMessage() {
