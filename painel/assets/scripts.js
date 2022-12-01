@@ -24,4 +24,17 @@ function removeErrorMessage() {
 
 }
 
+function removeIdioma() {
+    let excluirIdioma  = document.getElementById('error-idioma')
+
+    if (excluirIdioma != null){
+        excluirIdioma.remove()
+
+        
+    }
+
+}
+
+
+
 
