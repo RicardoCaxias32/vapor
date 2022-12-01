@@ -35,6 +35,28 @@ function removeIdioma() {
 
 }
 
+function removePlataforma() {
+    let excluirPlataforma  = document.getElementById('error-plataforma')
+
+    if (excluirPlataforma != null){
+        excluirPlataforma.remove()
+
+        
+    }
+
+}
+
+function removeCategoria() {
+    let excluirCategoria  = document.getElementById('error-categoria')
+
+    if (excluirCategoria != null){
+        excluirCategoria.remove()
+
+        
+    }
+
+}
+
 
 
 
