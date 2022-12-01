@@ -3,7 +3,7 @@
     $error = $_GET['error'] ?? null;
 ?>
 
-<div onclick="removePlataforma()" id="content-container">
+<div onclick="removeElementoporId('error-plataforma')" id="content-container">
     <form action="cadastrar-plataforma.php" method="post">
         <div class="row">
             <div class="input-container quarter">

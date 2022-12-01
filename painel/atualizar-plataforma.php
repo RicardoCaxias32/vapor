@@ -15,7 +15,7 @@ if ($plataforma == null) {
     mysqli_query($conn, $atualizar_plataforma);
     header("location: plataformas.php");
 } else {
-    header("location: editar-plataforma.php?error=Este plataforma já está cadastrado&id={$id_plataforma}");
+    header("location: editar-plataforma.php?error=Esta plataforma já está cadastrada&id={$id_plataforma}");
 }
 
 ?>

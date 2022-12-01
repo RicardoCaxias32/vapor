@@ -3,7 +3,7 @@
     $error = $_GET['error'] ?? null;
 ?>
 
-<div onclick="removeCategoria()" id="content-container">
+<div onclick="removeElementoporId('error-categoria')" id="content-container">
     <form action="cadastrar-categoria.php" method="post">
         <div class="row">
             <div class="input-container quarter">

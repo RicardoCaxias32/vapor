@@ -18,7 +18,7 @@ $error_message = $_GET['error'] ?? null;
     <title>Vapor - Admnistrador - Login</title>
 </head>
 
-<body onclick="removeErrorMessage()">
+<body onclick="removeElementoporId('error')">
     <div class="container">
         <div id="form-login">
             <form action="./login.php" method="POST">

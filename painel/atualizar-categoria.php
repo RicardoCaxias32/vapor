@@ -15,7 +15,7 @@ if ($categoria == null) {
     mysqli_query($conn, $atualizar_categoria);
     header("location: categorias.php");
  } else {
-     header("location: editar-categoria.php?error=Este categoria já está cadastrado&id={$id_categoria}");
+     header("location: editar-categoria.php?error=Esta categoria já está cadastrada&id={$id_categoria}");
  }
 
 ?>
