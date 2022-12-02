@@ -103,4 +103,31 @@
 
  }
 
- 
+ function obterHoraAtual() {
+    const data = new Date()
+    let hora = data.getHours()
+    let minutos = data.getMinutes()
+    let segundos = data.getSeconds()
+    
+    if(hora <= 9) {
+      hora = "0" + hora
+    }
+  
+    if(minutos <= 9) {
+      minuto = "0" + minuto
+    }
+  
+    if(segundos <= 9) {
+      segundos = "0" + segundos
+    }
+  
+  
+    let dataAtual = hora + ":" + minutos + ":" + segundos; 
+  
+  
+    return dataAtual
+  }
+  
+  let dataAtual = obterHoraAtual()
+  console.log(dataAtual)
+
