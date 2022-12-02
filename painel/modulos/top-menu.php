@@ -31,5 +31,9 @@ require('conexao.php');
 
             <div id="header">
                 <div id="name">Dashboard</div>
-                <div id="hello">Bem Vindo, <b>Ricardo</b></div>
+                <div id="hello">Bem Vindo, <b>Ricardo</b> - <span id="clock"></span></div>
             </div>
+
+            <script>
+                updateClock()
+            </script>

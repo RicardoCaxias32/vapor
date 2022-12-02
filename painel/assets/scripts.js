@@ -103,18 +103,21 @@
 
  }
 
- function obterHoraAtual() {
+ function obterDataHoraAtual() {
     const data = new Date()
-    let hora = data.getHours()
+    let horas = data.getHours()
     let minutos = data.getMinutes()
     let segundos = data.getSeconds()
+    let dia = data.getDate()
+    let mes = data.getMonth()
+    let ano = data.getFullYear()
     
-    if(hora <= 9) {
-      hora = "0" + hora
+    if(horas <= 9) {
+      horas = "0" + hora
     }
   
     if(minutos <= 9) {
-      minuto = "0" + minuto
+      minutos = "0" + minutos
     }
   
     if(segundos <= 9) {
@@ -122,12 +125,24 @@
     }
   
   
-    let dataAtual = hora + ":" + minutos + ":" + segundos; 
+    let dataAtual = dia + "/" + mes + "/" + ano + " - " + horas + ":" + minutos + ":" + segundos; 
   
   
     return dataAtual
   }
+
+  function updateClock() {
+
+    const clock = document.getElementById('clock')
+    clock.innerHTML = obterDataHoraAtual()
+
+    setInterval(function () {
+      clock.innerHTML = obterDataHoraAtual()
+      1000
+    })
+
+  }
   
-  let dataAtual = obterHoraAtual()
-  console.log(dataAtual)
+  //let dataAtual = obterDataHoraAtual()
+  //console.log(dataAtual)
 
