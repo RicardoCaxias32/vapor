@@ -35,5 +35,13 @@ require('conexao.php');
             </div>
 
             <script>
+                document.getElementById("name").style.color = "green";
+            </script>
+
+            <script>
+                document.getElementById("hello").style.color = "green";
+            </script>
+
+            <script>
                 updateClock()
             </script>

@@ -108,8 +108,8 @@
     let horas = data.getHours()
     let minutos = data.getMinutes()
     let segundos = data.getSeconds()
-    let dia = data.getDate()
-    let mes = data.getMonth()
+    let dia = data.getDate() 
+    let mes = data.getMonth()+1
     let ano = data.getFullYear()
     
     if(horas <= 9) {
@@ -142,7 +142,52 @@
     })
 
   }
+
+  function getRandomInt(min, max){
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min);
+  };
+
+  function getRandomColor() {
+
+    const min = 1
+    const max = 4
+
+  
+
+  let cor = getRandomInt(min, max) 
+  const id = document.getElementById("top-container")
+  console.log(id)
+
+  if (cor == 1) {
+    id.style.color = 'red';
+  }
+
+  if (cor == 2) {
+    id.style.color = 'green';
+  }
+
+  if (cor == 3) {
+    id.style.color = 'blue';
+  }
+
+  function atualizarCor() {
+    getRandomColor()
+  }
+
+  setInterval(function ()
+    getRandomColor() 
+  ), 1000)
+
+
+
+  }
+
+  
   
   //let dataAtual = obterDataHoraAtual()
   //console.log(dataAtual)
+
+
 
