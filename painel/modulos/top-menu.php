@@ -34,14 +34,18 @@ require('conexao.php');
                 <div id="hello">Bem Vindo, <b>Ricardo</b> - <span id="clock"></span></div>
             </div>
 
-            <script>
+            <!-- <script>
                 document.getElementById("name").style.color = "green";
             </script>
 
             <script>
                 document.getElementById("hello").style.color = "green";
-            </script>
+            </script> -->
 
             <script>
                 updateClock()
+
+                atualizarCor()
             </script>
+
+           

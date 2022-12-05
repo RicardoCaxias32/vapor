@@ -151,47 +151,50 @@
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min) + min);
-  };
+  }
 
   function getRandomColor() {
 
     const min = 1
     const max = 4
+    let cor = getRandomInt(min, max) 
+    const id = document.getElementById("hello")
+    const idname = document.getElementById("name")
+    console.log(id)
 
-  
+      if (cor == 1) {
+        id.style.color = 'red';
+        idname.style.color = 'red';
+      }
 
-  let cor = getRandomInt(min, max) 
-  const id = document.getElementById("top-container")
-  console.log(id)
+      if (cor == 2) {
+        id.style.color = 'green';
+        idname.style.color = 'green';
+      }
 
-  if (cor == 1) {
-    id.style.color = 'red';
-  }
+      if (cor == 3) {
+        id.style.color = 'blue';
+        idname.style.color = 'blue';
+      }
 
-  if (cor == 2) {
-    id.style.color = 'green';
-  }
+      
 
-  if (cor == 3) {
-    id.style.color = 'blue';
-  }
+  }  
 
   function atualizarCor() {
     getRandomColor()
+  
+    setInterval(function() {
+      getRandomColor()
+    }, 500)
+    
   }
-
-  setInterval(function ()
-    getRandomColor() 
-  ), 1000)
-
-
-
-  }
-
   
   
-  //let dataAtual = obterDataHoraAtual()
-  //console.log(dataAtual)
 
 
 
+
+  
+
+  
