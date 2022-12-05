@@ -103,6 +103,8 @@
 
  }
 
+ // FUNÇÃO PARA MOSTRAR O RELOGIO
+
  function obterDataHoraAtual() {
     const data = new Date()
     let horas = data.getHours()
@@ -142,6 +144,8 @@
     })
 
   }
+
+  //FUNÇÃO PARA MUDAR AS CORES
 
   function getRandomInt(min, max){
     min = Math.ceil(min);
