@@ -194,9 +194,9 @@
 
   function transformar_texto_maiusculo(elemento) {
 
-    let valor_digitado_pelo_usuario = elemento.value = elemento.value.toUpperCase()
+    elemento.value = elemento.value.toUpperCase()
 
-    elemento.value = "Texto de Teste"
+    
   }
   
   
