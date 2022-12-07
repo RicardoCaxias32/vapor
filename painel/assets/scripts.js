@@ -199,7 +199,21 @@
     
   }
   
+  function primeira_letra_maiuscula(elemento) {
+
+  elemento.value = elemento.value[0].toUpperCase() + elemento.value.slice(1).toLowerCase();
+
+  }
   
+  
+  
+
+  
+
+  
+
+  
+
   
 
 

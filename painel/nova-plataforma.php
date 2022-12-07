@@ -8,7 +8,7 @@
         <div class="row">
             <div class="input-container quarter">
                 <label for="plataform">Plataforma</label>
-                <input name="plataform" id="plataform" class="row-input" type="text">
+                <input name="plataform" id="plataform" class="row-input" type="text" onkeyup="primeira_letra_maiuscula(this)">
             </div>
         </div>
 
@@ -21,5 +21,7 @@
         </div>
     </form>
 </div>
+
+
 
 <?php require('./modulos/footer.php') ?>
